@@ -1,18 +1,19 @@
 
-import Footercomp from "./Footercomp"
-import Navcomp from "./Navcomp"
 
-import capa from "./capa.jpg"
-import eajfotofrente from "./eaj-foto-frente.jpg"
-import eajpista from "./eaj-pista.jpg"
-import eajeucaliptos from "./eucaliptos-1024x768.jpg"
 
+
+import capa from "./components/capa.jpg"
+import eajfotofrente from "./components/eaj-foto-frente.jpg"
+import eajpista from "./components/eaj-pista.jpg"
+import eajeucaliptos from "./components/eucaliptos-1024x768.jpg"
+
+import Footercomp from "./components/Footercomp"
 const PaginaPrincipalTADS = () => {
 
     
     return (
         <section className="md-5">
-                {Navcomp(1)}
+                
             <h1 className="my-5" >Apresentação</h1>
             <Text1/>
             <CarrocelImg/>

@@ -3,34 +3,12 @@ import {Link} from "react-router-dom"
 import btnicon from "./btn-icon.png"
 import eajlogo from "./eaj-logo-2.jpg"
 
-function Navcomp(num) {
-    const paginaPrinc = "/invoices"
-    const paginaProjPed = "/algo"
-    const paginaNoticias = "/algo"
-    //pagina principal
-    let li1 = "/projPedagogico"
-    let li2 = "/noticias"
-          // alert(num)
-    if(num != 1){
-    switch (num) {
+function Navcomp() {
+    const paginaPrinc = "/"
+    const paginaProjPed = "/ProjPedagogico"
+    const paginaNoticias = "/Noticias"
     
-        case 2: //projPedagógico
-            li1 = "/paginaPrincipal"
-            li2 = "/noticias"
-            
-        break;
-        case 3: //Noticias
-            li1 = "/paginaPrincipal"
-            li2 = "/projPedagogico"  
-        break;
-        
-        default:
-        li1 = "/null"
-        li2 = "/null"  
-        break;
-    }
-    }
-    
+     
     return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary p-0 row" id="mainNav">
                     <div className="col-12">
@@ -43,8 +21,9 @@ function Navcomp(num) {
                 
                         <div className="collapse navbar-collapse" id="barRespons">
                             <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                            <li className="nav-item"><Link className="nav-link text-light" to={li1}>algo</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-light" to={li2}>algo2</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-light" to={paginaPrinc}>Pagina principal</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-light" to={paginaProjPed}>Projeto pedagógico</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-light" to={paginaNoticias}>Noticias</Link></li>
                             </ul>
                         </div>
                     </div>
