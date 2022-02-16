@@ -1,12 +1,13 @@
 
 import {Link} from "react-router-dom"
-import btnicon from "./btn-icon.png"
-import eajlogo from "./eaj-logo-2.jpg"
+import btnicon from "./../Assets/btn-icon.png"
+import eajlogo from "./../Assets/eaj-logo-2.jpg"
 
 function Navcomp() {
     const paginaPrinc = "/"
     const paginaProjPed = "/ProjPedagogico"
     const paginaNoticias = "/Noticias"
+    const paginaRestaurants = "/Restaurants"
     
      
     return (
@@ -21,9 +22,10 @@ function Navcomp() {
                 
                         <div className="collapse navbar-collapse" id="barRespons">
                             <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                            <li className="nav-item"><Link className="nav-link text-light" to={paginaPrinc}>Pagina principal</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-light" to={paginaProjPed}>Projeto pedagógico</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-light" to={paginaNoticias}>Noticias</Link></li>
+                                <li className="nav-item"><Link className="nav-link text-light" to={paginaPrinc}>Pagina principal</Link></li>
+                                <li className="nav-item"><Link className="nav-link text-light" to={paginaProjPed}>Projeto pedagógico</Link></li>
+                                <li className="nav-item"><Link className="nav-link text-light" to={paginaNoticias}>Noticias</Link></li>
+                                <li className="nav-item"><Link className="nav-link text-light" to={paginaRestaurants}>Restaurantes</Link></li>
                             </ul>
                         </div>
                     </div>

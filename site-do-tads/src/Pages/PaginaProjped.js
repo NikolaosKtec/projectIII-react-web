@@ -1,16 +1,13 @@
-import Footercomp from "./components/Footercomp";
+import Footercomp from "./../Components/Footercomp";
+import HerderComponent from './../Components/HerderComponent';
 
-import capa from "./components/capa.jpg"
+import capa from "./../Assets/capa.jpg"
 
 function PaginaProjped() {
-
     return (
-        
         <section className="md-5">
-           
             <ArticleText/>
             <Ulelem/>
-
             <div className="border border-primary rounded">
               <span>Projeto pedagógico do curso:</span>
                 <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=7876138&&key=80cc875a90b89f05a07f7732bd6d8c21">Documento
@@ -20,9 +17,7 @@ function PaginaProjped() {
         </section>
     );
 }
-
 const Ulelem = ()=> {
-
     return (
         <article>
         <span className="mt-5">Adicionalmente, as seguintes características são referência para a atuação deste 
@@ -30,19 +25,25 @@ const Ulelem = ()=> {
             </span>
             <ul className="my-5">
                 <li className="mt-5"> ser atento ao impacto das Tecnologias da Informação e Comunicação no atendimento 
-                    e antecipação estratégica das necessidades da sociedade e das organizações;</li>
+                    e antecipação estratégica das necessidades da sociedade e das organizações;
+                </li>
 
                 <li className="mt-5">ser criativo, crítico e sistêmico na análise, compreensão e resolução de 
-                    problemas da área de análise e desenvolvimento de sistemas computacionais;</li>
+                    problemas da área de análise e desenvolvimento de sistemas computacionais;
+                </li>
+
                 <li>ser empreendedor na geração e identificação de oportunidades de negócios 
-                    na área de análise e desenvolvimento de sistemas computacionais;</li>
+                    na área de análise e desenvolvimento de sistemas computacionais;
+                </li>
 
                 <li className="mt-5">ser ético e responsável perante as questões sociais, profissionais, 
-                    ambientais, legais, políticas, humanísticas e tecnológicas; </li>
+                    ambientais, legais, políticas, humanísticas e tecnológicas; 
+                </li>
 
                 <li className="mt-5">ser comprometido com o desenvolvimento contínuo de conhecimentos, 
                     competências e habilidades, e com a evolução da tecnologia, da 
-                    sociedade e do mundo do trabalho;</li>
+                    sociedade e do mundo do trabalho;
+                </li>
 
                 <li className="mt-5">ser colaborativo na atuação em equipes multidisciplinares.</li>
             </ul>
@@ -51,10 +52,9 @@ const Ulelem = ()=> {
 }
 
 const ArticleText = ()=> {
-
     return (
         <article className="mb-5">
-            <h1 className="my-5" >Perfil profissional</h1>
+            <HerderComponent titulo="Perfil profissional" />
             <figure className="figure">
                 <img className="figure-img" width="200" src={capa}/>
             </figure>
