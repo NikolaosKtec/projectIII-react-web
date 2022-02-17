@@ -7,20 +7,23 @@ import eajeucaliptos from "./../Assets/eucaliptos-1024x768.jpg"
 import Footercomp from "./../Components/Footercomp"
 const PaginaPrincipalTADS = () => {  
     return (
-        <section className="md-5">
-            <HerderComponent titulo="Apresentação" />
-            <Text1/>
-            <CarrocelImg/>
-            <Footercomp/>
-        </section>
+        <>
+          <section className="container">
+              <HerderComponent titulo="Apresentação" />
+              <Text1/>
+              <CarrocelImg/>
+          </section>
+          <Footercomp/>
+        </>
     );
 }
   const Text1 = ()=> {
     return (
-      <div className="mb-5">
+      <article className="mb-5">
         <figure className="figure">
-            <img className="figure-img " alt="Imagem tads" width="200" src={capa}/>
+            <img className="figure-img " alt="Imagem tads" src={capa}/>
         </figure>
+
         <p className="mt-4"> 
           O Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS) tem como objetivo a 
           formação de profissionais capazes de compreender o processo de construção e reconstrução do 
@@ -35,21 +38,19 @@ const PaginaPrincipalTADS = () => {
           desenvolvimento de sistemas, podendo exercer atividades no campo da análise de sistemas, engenharia 
           de software, gerência de projetos e administração de bancos de dados. 
         </p>
-      </div>
+      </article>
     );
   }
 
   const CarrocelImg = ()=> {
     return (
-      <article>
-        <h2 className="mt-3">Fotos do Campus</h2>
-        <div id="CarrDeIMG" className="carousel slide ms-5 mb-5 ps-5" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#CarrDeIMG" data-bs-slide-to="0" className="active"></button>
-              <button type="button" data-bs-target="#CarrDeIMG" data-bs-slide-to="1" ></button>
-              <button type="button" data-bs-target="#CarrDeIMG" data-bs-slide-to="2" ></button>
-            </div>
-            <div id="carouselImg" className="carousel-inner">
+      <section className="container">
+        <header>
+          <h2 className="my-3">Fotos do Campus</h2>
+        </header>
+
+        <article id="CarrDeIMG" className="carousel slide ms-5 mb-5 ps-5" data-bs-ride="carousel">
+            <figure id="carouselImg" className="carousel-inner">
               <div className="carousel-item active m-3">
                 <img src={eajfotofrente} alt="ops" className="w-75"/>
               </div>
@@ -59,18 +60,20 @@ const PaginaPrincipalTADS = () => {
               <div className="carousel-item">
                 <img src={eajpista} alt="ops" className="w-75"/>
               </div>
-              <figcaption>FOTOS fonte:EAJ</figcaption>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#CarrDeIMG" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#CarrDeIMG" data-bs-slide="next">
-              <span className="carousel-control-next-icon" ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-      </article>
+            </figure>
+
+            <footer>
+              <button className="carousel-control-prev" type="button" data-bs-target="#CarrDeIMG" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon bg-black"></span>
+                <span className="visually-hidden">Anterior</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#CarrDeIMG" data-bs-slide="next">
+                <span className="carousel-control-next-icon bg-black"></span>
+                <span className="visually-hidden">Próxima</span>
+              </button>
+            </footer>
+        </article>
+      </section>
     );
   }
 export default PaginaPrincipalTADS;
