@@ -3,6 +3,8 @@ import capa from "./../Assets/capa.jpg"
 import eajfotofrente from "./../Assets/eaj-foto-frente.jpg"
 import eajpista from "./../Assets/eaj-pista.jpg"
 import eajeucaliptos from "./../Assets/eucaliptos-1024x768.jpg"
+import styles  from './../Components/Style.module.css'
+//import './../Components/'
 
 import Footercomp from "./../Components/Footercomp"
 const PaginaPrincipalTADS = () => {  
@@ -21,7 +23,7 @@ const PaginaPrincipalTADS = () => {
     return (
       <article className="mb-5">
         <figure className="figure">
-            <img className="figure-img " alt="Imagem tads" src={capa}/>
+            <img className={styles.capa} alt="Imagem tads" src={capa}/>
         </figure>
 
         <p className="mt-4"> 
@@ -44,21 +46,21 @@ const PaginaPrincipalTADS = () => {
 
   const CarrocelImg = ()=> {
     return (
-      <section className="container">
+      <section className="">
         <header>
-          <h2 className="my-3">Fotos do Campus</h2>
+          <h2 className="my-md-3">Fotos do Campus</h2>
         </header>
 
-        <article id="CarrDeIMG" className="carousel slide ms-5 mb-5 ps-5" data-bs-ride="carousel">
+        <article id="CarrDeIMG" className="carousel slide m-md-3" data-bs-ride="carousel">
             <figure id="carouselImg" className="carousel-inner">
-              <div className="carousel-item active m-3">
-                <img src={eajfotofrente} alt="ops" className="w-75"/>
+              <div className="carousel-item active ms-md-3">
+                <img src={eajfotofrente} alt="ops" className={styles.imgCarr, styles.imgagu}/>
               </div>
               <div className="carousel-item">
-                <img src={eajeucaliptos} alt="ops" className="w-75"/>
+                <img src={eajeucaliptos} alt="ops" className={styles.imgCarr}/>
               </div>
               <div className="carousel-item">
-                <img src={eajpista} alt="ops" className="w-75"/>
+                <img src={eajpista} alt="ops" className={styles.imgCarr}/>
               </div>
             </figure>
 

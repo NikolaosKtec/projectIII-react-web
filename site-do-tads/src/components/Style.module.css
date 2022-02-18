@@ -1,0 +1,37 @@
+
+@media (max-width:400px){
+
+    .capa {
+        max-width: 300px;
+    }
+}
+
+
+
+
+.imgCarr {
+    min-width: 200px;
+    max-width: 740px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.imgagu {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.imgfooter  {
+    
+    max-width: 150px;
+}
+
+.sect {
+    margin: auto;
+}
+
+@media (max-width:400px) {
+ 
+    .textpp {
+        font-size: 0.6rem;
+    }
+}

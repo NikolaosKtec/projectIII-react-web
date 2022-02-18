@@ -42,8 +42,8 @@ const Restaurat = ()=> {
                 <article className="row">
                     {restaurants.map((restaurant) => {
                         return (
-                            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
-                                <RestauranteComponente key={restaurant.id} {... restaurant} />
+                            <div key={restaurant.id} className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                                <RestauranteComponente {... restaurant} />
                             </div>
                         );
                     })}

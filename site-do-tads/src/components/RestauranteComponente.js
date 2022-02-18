@@ -1,18 +1,18 @@
-import ModalComponente from './../Components/ModalComponente';
+import ModalComponente from './ModalComponente';
 
-function RestauranteComponente({id, address, description, logo, phone_number, name}) {
+function RestauranteComponente(restaurant) {
 
     return (
         <>
             <section className="card">
-                <img src={logo} className="card-img-top" alt="logo" />
+                <img src={restaurant.logo} className="card-img-top" alt="logo" />
                 <div className="card-body">
                     
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">{description}</p>
-                    <p className="card-text">{address}</p>
-                    <p className="card-text">{phone_number}</p>
-                    <ModalComponente/>
+                    <h5 className="card-title">{restaurant.name}</h5>
+                    <p className="card-text">{restaurant.description}</p>
+                    <p className="card-text">{restaurant.address}</p>
+                    <p className="card-text">{restaurant.phone_number}</p>
+                    <ModalComponente {... restaurant}/>
                 </div>
             </section>
         </>

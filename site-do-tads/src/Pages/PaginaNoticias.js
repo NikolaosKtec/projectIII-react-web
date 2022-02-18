@@ -1,6 +1,6 @@
 import Footercomp from "../Components/Footercomp";
 import HerderComponent from "../Components/HerderComponent";
-
+//import styles  from './../Components/Style.module.css'
 function PaginaNoticias() {
     
     return (
@@ -19,7 +19,7 @@ const Content = ()=> {
             <HerderComponent titulo="Noticias" />
 
             <article className="col-8 table">
-                <table class="table table-hover table-striped">
+                <table className="table table-hover table-striped">
                     <tbody>
                         <tr>
                             <td>26/10/2021 09:04	Calendário para projeto de Trabalho de Conclusão de Curso Ano/Semestre 2022.1</td>

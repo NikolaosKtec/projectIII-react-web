@@ -1,6 +1,6 @@
 import Footercomp from "./../Components/Footercomp";
 import HerderComponent from './../Components/HerderComponent';
-
+import styles  from './../Components/Style.module.css'
 import capa from "./../Assets/capa.jpg"
 
 function PaginaProjped() {
@@ -61,7 +61,7 @@ const ArticleText = ()=> {
             <HerderComponent titulo="Perfil profissional" />
 
             <figure className="figure">
-                <img className="figure-img" src={capa}/>
+            <img className={styles.capa} alt="Imagem tads" src={capa}/>
             </figure>
             <p className="mt-4"> 
                 O profissional egresso do curso de Tecnologia em Análise e Desenvolvimento de 
